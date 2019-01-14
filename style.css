@@ -129,7 +129,6 @@ p {
 }
 
 @media screen and (min-width: 950px) {
-
     .header-content {
         display: flex;
         flex-direction: row;
