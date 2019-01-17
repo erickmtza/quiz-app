@@ -134,9 +134,18 @@ function result() {
     </div>`;
 }
 
+function removeResult() {
+    $('.results').remove();
+}
+
 function playAgain() {
     $('main').on('click', '.play-again', function() {
-        location.reload();
+        removeResult();
+        questionIndex = 0;
+        questionCount = 0;
+        score = 0;
+        $('.js-score').text(score);
+        renderQuestion();
     })
 }
 
